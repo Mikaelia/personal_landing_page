@@ -1,0 +1,28 @@
+.wave-container {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -14.8rem;
+        left: 2rem;
+        transform: rotate(3.8deg);
+        background-image: url('../static/tree.svg');
+        background-repeat: repeat;
+        height: 10rem;
+        width: 279px;
+        z-index: 5;
+    }
+}
+
+.wave {
+    position: absolute;
+    min-width: 100%;
+    bottom: -1px;
+
+    & path {
+        fill: black;
+    }
+
+
+}
