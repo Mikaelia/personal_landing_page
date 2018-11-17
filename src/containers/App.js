@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Section from "../components/Section";
 import Story from "../containers/Story";
 import Birds from "../components/Birds";
+import About from "../components/About";
 
 import "../sass/main.scss";
 
@@ -11,11 +12,13 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Section class="background background--primary">
+        <Section class="section section--hero">
           <Birds />
         </Section>
         <Story />
-        <Section class="background background--secondary" />
+        <Section class="section section--about">
+          <About />
+        </Section>
       </div>
     );
   }
