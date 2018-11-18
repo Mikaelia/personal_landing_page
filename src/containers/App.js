@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Header from "../components/Header";
 import Section from "../components/Section";
-import Story from "../containers/Story";
+import Story from "./Story";
 import Birds from "../components/Birds";
-import About from "../components/About";
+import About from "./About";
+import Footer from "../components/Footer";
 
 import "../sass/main.scss";
 
@@ -19,6 +20,7 @@ class App extends Component {
         <Section class="section section--about">
           <About />
         </Section>
+        <Footer />
       </div>
     );
   }

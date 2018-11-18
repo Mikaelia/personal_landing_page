@@ -1,67 +1,62 @@
-.card-group {
-    margin: 50px 40px 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    justify-items: center;
-}
-
 .card {
-    width: 300px;
-    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    width: 20rem;
+    height: 20rem;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     cursor: pointer;
-}
-
-.card:hover {
-    transform: scale(1.1, 1.1);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-}
-
-.card:hover img {
-    transform: translateY(-20px);
-}
-
-.card img {
-    height: 110%;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.card h3 {
-    color: white;
-    font-size: 30px;
-    margin: 20px 0 0 20px;
-    width: 190px;
-}
-
-.Card p {
-    color: rgba(255, 255, 255, 0.8);
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 18px;
-    align-self: end;
-    margin: 0 0 20px 20px;
-}
 
 
-.Cards h2 {
-    margin: 50px 20px;
-    font-size: 60px;
-    text-align: center;
-    font-weight: 700;
-    background: linear-gradient(104.74deg, #050A27 0%, #4A548C 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    &__image {
+
+        height: 110%;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        z-index: -5;
+    }
+
+    &__image:before {
+        content: '';
+        color: red;
+        position: absolute;
+        z-index: -3;
+    }
+
+    &__text {
+        font-size: 3rem;
+        z-index: 800;
+    }
+
+
+    &:hover {
+        transform: scale(1.2, 1.2);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        color: transparent;
+    }
+
+    &:active {
+        transform: translateY(10px);
+    }
+
+    &:hover>img {
+        opacity: 1;
+        transform: translateY(-2rem)
+    }
+
+
+    &__image:hover {}
 }
 
 // @media (max-width: 640px) {
@@ -81,3 +76,13 @@
 //         grid-template-columns: repeat(1, 1fr);
 //     }
 // }
+
+
+.card-3 img {
+    padding: 5rem 5rem 4rem 4rem;
+}
+
+.card-1 {
+
+    z-index: 1000;
+}

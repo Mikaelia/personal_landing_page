@@ -19,14 +19,3 @@ body {
     overflow-x: hidden;
 
 }
-
-.App {
-    position: relative;
-    height: 100vh;
-
-    display: grid;
-
-    grid-template-rows: 4rem 95vh 100vh 200vh 6vh;
-    grid-template-columns: repeat(8, 1fr);
-
-}

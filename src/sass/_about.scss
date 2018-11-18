@@ -1,15 +1,43 @@
 .about {
-    transform: rotate(-180deg) translateY(30rem);
-    ;
-    background-color: green;
 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+    grid-template-rows: repeat(3, min-content);
+    justify-items: center;
+
+    // Fix reversed bg image on section-about
+    transform: rotate(-180deg) translateY(30rem);
+    margin: 0 5rem;
+    position: relative;
+
+    &__header {
+        grid-row: 1 / 2;
+
+        font-size: 3rem;
+        color: white;
+
+    }
+
+    &__icon {
+        grid-row: 2 / 3;
+        height: 4rem;
+        width: 4rem;
+        fill: white;
+        margin-bottom: 30rem;
+        z-index: 100;
+        opacity: 0;
+
+
+    }
 
     &__card-group {
-        margin: 50px 40px 100px;
+        grid-row: 3 / 4;
+
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 40px;
+        grid-gap: 4rem;
         justify-items: center;
 
+        z-index: 5000;
     }
 }
