@@ -5,10 +5,22 @@ import Story from "./Story";
 import Birds from "../components/Birds";
 import About from "./About";
 import Footer from "../components/Footer";
+import Viewport from "../components/Viewport/Viewport";
+// import Test from "../components/Test";
 
 import "../sass/main.scss";
 
 class App extends Component {
+  state = {
+    showViewport: false
+  };
+
+  handleCardClick = e => {
+    // if card name = active card, close. Else, leave open
+
+    this.setState({ showViewport: !this.state.showViewport });
+  };
+
   render() {
     return (
       <div className="App">
@@ -18,8 +30,11 @@ class App extends Component {
         </Section>
         <Story />
         <Section class="section section--about">
-          <About />
+          <About handleCardClick={this.handleCardClick} />
         </Section>
+        {this.state.showViewport ? (
+          <Viewport active={this.state.activeView} />
+        ) : null}
         <Footer />
       </div>
     );

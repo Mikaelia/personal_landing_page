@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Card from "../components/Card";
-import View from "../components/View";
 import Arrow from "../components/Arrow";
+import Viewport from "../components/Viewport/Viewport";
 
 import "../sass/_about.scss";
 import "../sass/_animations.scss";
@@ -27,7 +27,7 @@ export default class About extends Component {
     const el = document.querySelector(".about__header");
     const viewportOffset = el.getBoundingClientRect();
     console.log(viewportOffset.top);
-    if (viewportOffset.top < 650) {
+    if (viewportOffset.top < 300) {
       this.setState({ animate: true });
     } else {
       this.setState({ animate: false });
@@ -43,37 +43,28 @@ export default class About extends Component {
           <Arrow animation={this.state.animate} />
           <Arrow animation={this.state.animate} />
         </div>
-        <div
-          className="about__card-group"
-          selectedKey={this.state.selectedKey}
-          onStateChange={newState => {
-            if (newState.selectedKey) {
-              console.log();
-              alert(`Button "${newState.selectedKey}" selected`);
-            }
-
-            this.setState(newState);
-          }}
-        >
+        <div className="about__card-group">
           <Card
             key="button-1"
             class="card-1"
             title="Nature"
             image={require("../static/hiking3.jpg")}
-            onClick={() => console.log("clicked")}
+            handleClick={this.props.handleCardClick}
           />
           <Card
             class="card-2"
             title="Art"
             image={require("../static/portrait1.jpg")}
+            handleClick={this.props.handleCardClick}
           />
           <Card
             class="card-3"
             title="Code"
             image={require("../static/github.png")}
+            handleClick={this.props.handleCardClick}
           />
         </div>
-        <View viewName={this.state.viewName} />
+        <Viewport viewName={this.state.viewName} />
       </div>
     );
   }
