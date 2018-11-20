@@ -17,12 +17,8 @@ class App extends Component {
   };
 
   handleCardClick = e => {
-    // if card name = active card, close. Else, leave open
-    console.log(e.target.getAttribute("category"));
-    console.log(e.target.attributes.category);
-    // console.log(category);
-
-    // console.log(category === "code");
+    const category = e.target.getAttribute("category");
+    this.setState({ activeView: category });
     this.setState({ showViewport: !this.state.showViewport });
   };
 
@@ -38,7 +34,7 @@ class App extends Component {
           <About handleCardClick={this.handleCardClick} />
         </Section>
         {this.state.showViewport ? (
-          <Viewport active={this.state.activeView} />
+          <Viewport activeView={this.state.activeView} />
         ) : null}
         <Footer />
       </div>
