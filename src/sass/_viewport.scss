@@ -1,7 +1,12 @@
 .viewport {
     // set margin dynamically to  -30 rem create animation effect
-    height: 80vh;
-    background-color: black;
+    height: 40rem;
+    background-color: rgba(0, 0, 0, 0.685);
+    z-index: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

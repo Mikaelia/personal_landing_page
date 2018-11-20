@@ -64,7 +64,7 @@ export default class ArtView extends Component {
 
   renderImage = (url, index) => {
     return (
-      <div className="artview-gallery__card">
+      <div className={"artview-gallery__card card--" + index}>
         <img
           className="artview-gallery__thumbnail"
           src={url}
@@ -82,9 +82,7 @@ export default class ArtView extends Component {
   render() {
     return (
       <section className="artview artview-gallery__container">
-        <div className="artview-gallery">
-          {images.map((url, index) => this.renderImage(url, index))}
-        </div>
+        {images.map((url, index) => this.renderImage(url, index))}
 
         {/* <GalleryModal
           isOpen={this.state.showModal}
