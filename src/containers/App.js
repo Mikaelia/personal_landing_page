@@ -12,14 +12,14 @@ import "../sass/main.scss";
 
 class App extends Component {
   state = {
-    showViewport: false,
+    // showViewport: false,
     activeView: "artView"
   };
 
   handleCardClick = e => {
     const category = e.target.getAttribute("category");
     this.setState({ activeView: category });
-    this.setState({ showViewport: !this.state.showViewport });
+    // this.setState({ showViewport: !this.state.showViewport });
   };
 
   render() {
@@ -32,9 +32,9 @@ class App extends Component {
         <Story />
         <Section class="section section--about">
           <About handleCardClick={this.handleCardClick}>
-            {this.state.showViewport ? (
-              <Viewport activeView={this.state.activeView} />
-            ) : null}
+            {/* {this.state.showViewport ? ( */}
+            <Viewport activeView={this.state.activeView} />
+            {/* ) : null} */}
           </About>
         </Section>
 

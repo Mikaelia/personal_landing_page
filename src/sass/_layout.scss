@@ -6,7 +6,7 @@
     //// MAIN GRID ////
     display: grid;
     grid-template-rows:
-        [nav-start hero-start]4rem [nav-end]95vh [hero-end story-start]100vh [story-end about-start]minmax(200vh, auto) [about-end] 4rem [footer-end];
+        [nav-start hero-start]4rem [nav-end]95vh [hero-end story-start]100vh [story-end about-start] 300vh [about-end] 4rem [footer-end];
     grid-template-columns: repeat(8, 1fr);
 
 
@@ -42,10 +42,11 @@
     align-items: flex-end;
 
     background-image: url('../static/bg--secondary.svg');
+    background-size: contain;
     margin-top: -30rem;
     transform: rotate(180deg);
     position: relative;
-    height: calc(100% + 30rem);
+    height: calc(300vh + 30rem);
 
 
 
