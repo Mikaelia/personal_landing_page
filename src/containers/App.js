@@ -17,7 +17,6 @@ class App extends Component {
 
   handleCardClick = e => {
     // if card name = active card, close. Else, leave open
-
     this.setState({ showViewport: !this.state.showViewport });
   };
 

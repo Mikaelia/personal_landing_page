@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Card from "../components/Card";
 import Arrow from "../components/Arrow";
-import Viewport from "../components/Viewport/Viewport";
 
 import "../sass/_about.scss";
 import "../sass/_animations.scss";
@@ -64,7 +63,6 @@ export default class About extends Component {
             handleClick={this.props.handleCardClick}
           />
         </div>
-        <Viewport viewName={this.state.viewName} />
       </div>
     );
   }
