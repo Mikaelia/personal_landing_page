@@ -25,7 +25,7 @@ export default class About extends Component {
   handleScroll = event => {
     const el = document.querySelector(".about__header");
     const viewportOffset = el.getBoundingClientRect();
-    console.log(viewportOffset.top);
+
     if (viewportOffset.top < 300) {
       this.setState({ animate: true });
     } else {

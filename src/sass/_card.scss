@@ -55,6 +55,9 @@
         transform: translateY(-2rem)
     }
 
+    &:hover>h3 {
+        visibility: hidden;
+    }
 
     &__image:hover {}
 }

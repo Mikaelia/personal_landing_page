@@ -12,11 +12,17 @@ import "../sass/main.scss";
 
 class App extends Component {
   state = {
-    showViewport: false
+    showViewport: false,
+    activeView: "artView"
   };
 
   handleCardClick = e => {
     // if card name = active card, close. Else, leave open
+    console.log(e.target.getAttribute("category"));
+    console.log(e.target.attributes.category);
+    // console.log(category);
+
+    // console.log(category === "code");
     this.setState({ showViewport: !this.state.showViewport });
   };
 
