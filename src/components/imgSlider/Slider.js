@@ -26,7 +26,14 @@ class Slider extends Component {
     translateValue: 0
   };
 
-  toPrevSlide = () => {};
+  toPrevSlide = () => {
+    if (this.state.currentIndex === 0) return;
+    else
+      this.setState(prevState => ({
+        currentIndex: prevState.currentIndex - 1,
+        translateValue: prevState.translateValue + this.slideWidth()
+      }));
+  };
 
   toNextSlide = () => {
     if (this.state.currentIndex === this.state.images.length - 1) {
@@ -53,7 +60,7 @@ class Slider extends Component {
           className="slider__wrapper"
           style={{
             transform: `translateX(${this.state.translateValue}px)`,
-            transition: "transform ease-out 0.45s"
+            transition: "transform ease-in-out 0.45s"
           }}
         >
           {this.state.images.map((image, i) => (
