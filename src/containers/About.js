@@ -63,6 +63,7 @@ export default class About extends Component {
             handleClick={this.props.handleCardClick}
           />
         </div>
+        {this.props.children}
       </div>
     );
   }

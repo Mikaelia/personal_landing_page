@@ -4,7 +4,7 @@ import "../sass/_birds.scss";
 
 export default function Birds() {
   return (
-    <div className="container">
+    <div className="birds-container">
       <div className="bird-container bird-container--one">
         <div className="bird bird--one" />
       </div>

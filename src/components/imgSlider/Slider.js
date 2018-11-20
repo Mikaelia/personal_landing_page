@@ -67,10 +67,10 @@ class Slider extends Component {
             <Slide key={i} image={image} />
           ))}
         </div>
-
-        <LeftArrow toPrevSlide={this.toPrevSlide} />
-
-        <RightArrow toNextSlide={this.toNextSlide} />
+        <div className="slider__arrow-wrapper">
+          <LeftArrow toPrevSlide={this.toPrevSlide} />
+          <RightArrow toNextSlide={this.toNextSlide} />
+        </div>
       </div>
     );
   }

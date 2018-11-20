@@ -8,8 +8,6 @@ export default function Viewport(props) {
   const { activeView } = props;
 
   return (
-    <div className="viewport slide-up">
-      {activeView === "Art" && <Slider />}
-    </div>
+    <div className="about__viewport">{activeView === "Art" && <Slider />}</div>
   );
 }

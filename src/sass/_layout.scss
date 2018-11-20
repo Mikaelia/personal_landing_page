@@ -5,8 +5,11 @@
 
     //// MAIN GRID ////
     display: grid;
-    grid-template-rows: [nav-start hero-start]4rem [nav-end]95vh[hero-end story-start]100vh [story-end about-start]200vh[about-end viewport-start] min-content [viewport-end footer-start] 4rem [footer-end];
+    grid-template-rows:
+        [nav-start hero-start]4rem [nav-end]95vh [hero-end story-start]100vh [story-end about-start]minmax(200vh, auto) [about-end] 4rem [footer-end];
     grid-template-columns: repeat(8, 1fr);
+
+
 
 }
 
@@ -17,6 +20,7 @@
 
 
     margin-top: -6vh;
+    width: 100vw;
     background-image: url('../static/bg--primary.svg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -38,10 +42,13 @@
     align-items: flex-end;
 
     background-image: url('../static/bg--secondary.svg');
-
-    margin-top: -20rem;
+    margin-top: -30rem;
     transform: rotate(180deg);
     position: relative;
+    height: calc(100% + 30rem);
+
+
+
     z-index: -50;
 
     // &::before {
@@ -62,12 +69,9 @@
 
 }
 
-.viewport {
-    grid-column: 1 / 9;
-    grid-row: viewport-start / viewport-end;
-}
+
 
 .footer {
-    grid-row: 6 / 7;
+    grid-row: 5 / 6;
     grid-column: 1 / 9;
 }

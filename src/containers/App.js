@@ -31,11 +31,13 @@ class App extends Component {
         </Section>
         <Story />
         <Section class="section section--about">
-          <About handleCardClick={this.handleCardClick} />
+          <About handleCardClick={this.handleCardClick}>
+            {this.state.showViewport ? (
+              <Viewport activeView={this.state.activeView} />
+            ) : null}
+          </About>
         </Section>
-        {this.state.showViewport ? (
-          <Viewport activeView={this.state.activeView} />
-        ) : null}
+
         <Footer />
       </div>
     );
