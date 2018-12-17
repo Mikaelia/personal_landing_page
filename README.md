@@ -5,4 +5,10 @@ and may be viewed here:
 
 > Link coming soon!
 
+Features:
+_In progress_
+[] - About Me
+[] - Art Gallery
+[] - Code Portfolio
+
 Thanks!
