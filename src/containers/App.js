@@ -3,9 +3,9 @@ import Header from "../components/Header";
 import Section from "../components/Section";
 import Story from "./Story";
 import Birds from "../components/Birds";
-import About from "./About";
+// import About from "./About";
 import Footer from "../components/Footer";
-import Viewport from "../components/Viewport/Viewport";
+// import Viewport from "../components/Viewport/Viewport";
 // import Test from "../components/Test";
 
 import "../sass/main.scss";
@@ -31,11 +31,11 @@ class App extends Component {
         </Section>
         <Story />
         <Section class="section section--about">
-          <About handleCardClick={this.handleCardClick}>
+          {/* <About handleCardClick={this.handleCardClick}>
             {/* {this.state.showViewport ? ( */}
-            <Viewport activeView={this.state.activeView} />
-            {/* ) : null} */}
-          </About>
+          {/* <Viewport activeView={this.state.activeView} /> */}
+          {/* ) : null} */}
+          {/* </About> */}
         </Section>
 
         <Footer />
