@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "../components/Header";
-import PDFViewer from "../components/PDFViewer";
+import ResumePage from "../components/ResumePage/ResumePage";
 import MainApp from "./MainApp";
 
 import "../sass/main.scss";
@@ -15,7 +15,7 @@ class App extends Component {
           <Header />
           <Switch>
             <Route exact path="/" component={MainApp} />
-            <Route path="/resume" component={PDFViewer} />
+            <Route path="/resume" component={ResumePage} />
           </Switch>
         </div>
       </Router>
