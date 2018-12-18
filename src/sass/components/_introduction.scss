@@ -1,0 +1,20 @@
+.introduction-container {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    color: $color-white;
+    width: 35rem;
+
+
+    letter-spacing: .1rem;
+    text-transform: none;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
+.introduction-header {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Navigation from "./Navigation";
 
-import "../sass/_header.scss";
-
 class Header extends Component {
   constructor(props) {
     super(props);

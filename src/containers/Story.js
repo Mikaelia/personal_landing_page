@@ -1,15 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import Wave from "../components/Wave";
 
-import "../sass/_story.scss";
+const Story = ({ children }) => (
+  <div className="story">
+    <Wave />
+    <div className="story__content">{children}</div>
+  </div>
+);
 
-export default class Story extends Component {
-  render() {
-    return (
-      <div className="story">
-        <Wave />
-        <div className="story__content" />{" "}
-      </div>
-    );
-  }
-}
+export default Story;

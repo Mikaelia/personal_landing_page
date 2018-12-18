@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../sass/_birds.scss";
-
 export default function Birds() {
   return (
     <div className="birds-container">

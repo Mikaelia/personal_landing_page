@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/_wave.scss";
 
 const Wave = () => (
   <div className="wave-container">
