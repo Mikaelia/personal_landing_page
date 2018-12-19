@@ -6,26 +6,24 @@ const Introduction = () => (
     <p>My name is Mikaela.</p>
     <br />
     <p>
-      I'm a Software Engineer and Front-End fan. I love learning to tackle
-      scaleable and reusable design.
+      I'm a lover of the Front-End, and learning how to tackle scaleable and
+      reusable design.
     </p>
     <br />
     <p>
-      With background in International Relations/Global Studies, I've an
-      interest in understanding people--their needs, thoughts, and stories--and
-      the world.
+      With background in International Relations and Global Studies, I've an
+      interest in understanding people--their needs, perspectives, and
+      stories--and in challenging my understanding of the world.
     </p>
     <br />
     <p>
-      As an artist, I'm am addicted to detail. My mission: to create those
-      little experiences that make all the difference. I'm constantly reading,
-      looking for ways to improve, and wishing there was just a little bit more
-      time in the day.
+      As an artist, I'm addicted to detail. My mission is to create those little
+      experiences that make all the difference.
     </p>
     <br />
     <p>
       When I need a break, you can catch me on the trail, disconnecting and
-      reconnecting with the world
+      reconnecting with the world ~
     </p>
   </article>
 );
