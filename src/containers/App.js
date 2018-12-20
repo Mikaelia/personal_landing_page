@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "../components/Header";
 import ResumePage from "../components/ResumePage/ResumePage";
-import MainApp from "./MainApp";
+import LandingPage from "./LandingPage";
 
 import "../sass/main.scss";
 
@@ -14,7 +14,7 @@ class App extends Component {
         <div className="App">
           <Header />
           <Switch>
-            <Route exact path="/" component={MainApp} />
+            <Route exact path="/" component={LandingPage} />
             <Route path="/resume" component={ResumePage} />
           </Switch>
         </div>

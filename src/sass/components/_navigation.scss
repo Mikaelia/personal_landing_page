@@ -136,7 +136,7 @@
         &--scrolled,
         &--scrolled::before,
         &--scrolled::after {
-            background-color: white;
+            background-color: $color-white;
         }
     }
 
@@ -156,13 +156,13 @@
     &__checkbox:checked+&__button &__icon::before {
         top: 0;
         transform: rotate(135deg);
-        background-color: white;
+        background-color: $color-white;
 
     }
 
     &__checkbox:checked+&__button &__icon::after {
         top: 0;
         transform: rotate(-135deg);
-        background-color: white;
+        background-color: $color-white;
     }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/_card.scss";
 
 const Card = props => (
   <div className={"card " + props.class} onClick={props.handleClick}>
