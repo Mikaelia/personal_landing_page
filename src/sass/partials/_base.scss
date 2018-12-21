@@ -23,3 +23,15 @@ body {
 App {
     position: relative;
 }
+
+::-webkit-scrollbar {
+    width: 3px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+    background: $color-secondary-light;
+
+}

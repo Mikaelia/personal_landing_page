@@ -8,27 +8,31 @@ const ProjectView = () => {
       <div className="project__card-container">
         <div className="project__card">
           <span className="project__card-name">TrailFinder</span>
-          <div className="project__card-image" />
+          <div className="project__card-image card-image--1" />
         </div>
         <div className="project__card">
           <span className="project__card-name">Color Collector</span>
-          <div className="project__card-image" />
+          <div className="project__card-image card-image--2" />
         </div>
         <div className="project__card">
-          <span className="project__card-name">Shell</span>
-          <div className="project__card-image" />
+          <span className="project__card-name">C Shell</span>
+          <div className="project__card-image card-image--3" />
         </div>
         <div className="project__card">
-          <span className="project__card-name">PrintF</span>
-          <div className="project__card-image" />
+          <span className="project__card-name">AirBnB</span>
+          <div className="project__card-image card-image--4" />
         </div>
         <div className="project__card">
           <span className="project__card-name"> HackerNews</span>
-          <div className="project__card-image" />
+          <div className="project__card-image card-image--5">
+            * Coming Soon *
+          </div>
         </div>
         <div className="project__card">
           <span className="project__card-name"> Contact Manager</span>
-          <div className="project__card-image" />
+          <div className="project__card-image card-image--6">
+            * Coming Soon *
+          </div>
         </div>
       </div>
     </div>

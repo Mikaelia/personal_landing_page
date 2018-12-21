@@ -19,7 +19,7 @@ const LandingPage = () => (
     </Story>
     <Section class="section section--about">
       <div className="rotation-correction">
-        <Fade down duration={1500}>
+        <Fade down duration={3500}>
           <ProjectView />
         </Fade>
       </div>
