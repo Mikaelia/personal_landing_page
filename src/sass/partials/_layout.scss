@@ -18,19 +18,13 @@
 
 
     margin-top: -6vh;
+
     width: 100vw;
     background-image: url('../static/bg--primary.svg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-
-
-
-
-
 
 .story {
     grid-row: 3 / 4;
@@ -58,14 +52,15 @@
     .rotation-correction {
         //Correct scroll reverse
         transform: rotate(180deg);
+        margin-top: -20rem;
+
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
 
 }
-
-
 
 .footer {
     grid-row: 5 / 6;

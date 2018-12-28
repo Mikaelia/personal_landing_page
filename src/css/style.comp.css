@@ -107,6 +107,7 @@ App {
   z-index: -50; }
   .section--about .rotation-correction {
     transform: rotate(180deg);
+    margin-top: -20rem;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -353,7 +354,6 @@ App {
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
-  font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
   color: #f8ebdb;
@@ -362,6 +362,9 @@ App {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #f8ebdb 50%);
   background-size: 220%;
   transition: all .4s; }
+  @media only screen and (min-width: 31.25em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 3rem; } }
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
@@ -583,8 +586,9 @@ App {
 
 .project__container {
   border-radius: .2rem;
-  height: 60rem;
+  height: 100rem;
   width: 95vw;
+  margin-top: 10rem;
   padding-top: 5rem;
   background: rgba(255, 255, 255, 0.152);
   color: white;
@@ -606,9 +610,9 @@ App {
   width: 100%; }
 
 .project__card-container {
-  height: 80%;
+  height: 100%;
   width: 94%;
-  margin-bottom: 4rem;
+  padding-bottom: 18rem;
   padding-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -633,18 +637,19 @@ App {
   border-radius: .2rem;
   overflow: hidden;
   position: relative;
-  transition: all .3s ease-in-out; }
+  transition: all .2s;
+  box-shadow: 2px 3px 15px rgba(32, 68, 122, 0.37); }
   @media only screen and (min-width: 31.25em) {
     .project__card {
       width: 29rem;
-      height: 25rem; } }
+      height: 25rem; }
+      .project__card:hover {
+        transform: scale(1.02) translateY(-1rem);
+        box-shadow: 7px 15px 25px rgba(27, 50, 85, 0.384); } }
   @media only screen and (min-width: 50em) {
     .project__card {
       width: 20rem;
       height: 20rem; } }
-  .project__card:hover {
-    transform: scale(1.02) translateY(-1rem);
-    box-shadow: 2px 3px 15px rgba(32, 68, 122, 0.37); }
   .project__card:hover .project__card-name {
     opacity: 1;
     height: 25%;

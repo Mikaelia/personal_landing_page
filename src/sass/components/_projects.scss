@@ -1,9 +1,11 @@
 .project {
     &__container {
         border-radius: .2rem;
-        height: 60rem;
+        height: 100rem;
         width: 95vw;
+        margin-top: 10rem;
         padding-top: 5rem;
+
         background: rgba(255, 255, 255, 0.152);
         color: white;
 
@@ -31,9 +33,9 @@
     }
 
     &__card-container {
-        height: 80%;
+        height: 100%;
         width: 94%;
-        margin-bottom: 4rem;
+        padding-bottom: 18rem;
         padding-top: 2rem;
 
         display: grid;
@@ -71,12 +73,18 @@
         border-radius: .2rem;
         overflow: hidden;
         position: relative;
-        transition: all .3s ease-in-out;
+        transition: all .2s;
+        box-shadow: $box-shadow;
 
 
         @include respond (smallest) {
             width: 29rem;
             height: 25rem;
+
+            &:hover {
+                transform: scale(1.02) translateY(-1rem);
+                box-shadow: $box-shadow-dark;
+            }
         }
 
         @include respond (large) {
@@ -89,10 +97,7 @@
             height: 20rem;
         }
 
-        &:hover {
-            transform: scale(1.02) translateY(-1rem);
-            box-shadow: $box-shadow;
-        }
+
 
         &:hover>div {
             // transform: scale(1.3);
