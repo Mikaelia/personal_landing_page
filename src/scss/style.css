@@ -618,7 +618,8 @@ App {
 .project__card-container {
   height: 75%;
   width: 94%;
-  padding-bottom: 18rem;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
   padding-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -633,7 +634,6 @@ App {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }
   @media only screen and (min-width: 50em) {
     .project__card-container {
-      padding-bottom: 4rem;
       grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); } }
 
 .project__card {
