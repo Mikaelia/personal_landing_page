@@ -25,6 +25,12 @@
 }
 
 
+
+
+
+
+
+
 .story {
     grid-row: 3 / 4;
     grid-column: 1 / 9;
@@ -35,6 +41,7 @@
     grid-row: 4 / 5;
     position: relative;
     overflow-y: scroll;
+    overflow-x: hidden;
 
     margin-top: -40rem;
     // Reverse background image
