@@ -50,10 +50,13 @@
 
 }
 
+
 @keyframes fly-cycle {
 
     100% {
         background-position: -900px 0;
+        background-position-x: -900px;
+        background-position-y: 0;
     }
 
 }

@@ -3,7 +3,7 @@
     top: 5rem;
     color: $color-white;
     max-width: 35rem;
-
+    background: transparent;
 
     padding: 0 2rem;
     letter-spacing: .05rem;
@@ -13,11 +13,7 @@
     font-weight: 100;
 
     @include respond(smallest) {
-
-
         max-width: 35rem;
-
-
         letter-spacing: .05rem;
         text-transform: none;
         line-height: 1.6;
@@ -31,7 +27,5 @@
     font-weight: 400;
     margin-bottom: 4rem;
     text-transform: uppercase;
-
-
 
 }

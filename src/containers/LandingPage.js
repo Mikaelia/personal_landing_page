@@ -13,7 +13,7 @@ const LandingPage = () => (
       <Birds />
     </Section>
     <Story>
-      <Fade duration={3000} delay={800}>
+      <Fade left duration={2000} delay={300}>
         <Introduction />
       </Fade>
     </Story>
