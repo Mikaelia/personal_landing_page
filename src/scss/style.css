@@ -586,7 +586,7 @@ App {
   align-items: center; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .project__container {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 10rem, 0 100%);
+      -webkit-clip-path: polygon(0 10rem, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 10rem, 100% 0, 100% 100%, 0 100%); } }
 
 .project__header {
