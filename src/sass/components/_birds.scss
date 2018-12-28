@@ -65,6 +65,7 @@
 
     0% {
         transform: scale(0.3) translateX(-10vw);
+        visibility: visible;
     }
 
     10% {
@@ -94,12 +95,14 @@
     }
 
     61% {
-        opacity: 0;
+        transform: translateY(0vh) translateX(100vw) scale(0.6);
+        // opacity: 0;
         visibility: hidden;
     }
 
     100% {
-        opacity: 0;
+        transform: translateY(0vh) translateX(100vw) scale(0.6);
+        // opacity: 0;
         visibility: hidden;
     }
 

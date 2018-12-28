@@ -1,9 +1,9 @@
 .project {
     &__container {
         border-radius: .2rem;
-        height: 100rem;
+        height: 80rem;
         width: 95vw;
-        margin-top: 10rem;
+        margin-top: 0rem;
         padding-top: 5rem;
 
         background: rgba(255, 255, 255, 0.152);
@@ -12,13 +12,16 @@
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
 
         @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
             -webkit-clip-path: polygon(0 10rem, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 10rem, 100% 0, 100% 100%, 0 100%);
+        }
 
+        @include respond(large) {
+            height: 73rem;
         }
     }
 
@@ -33,7 +36,7 @@
     }
 
     &__card-container {
-        height: 100%;
+        height: 75%;
         width: 94%;
         padding-bottom: 18rem;
         padding-top: 2rem;
@@ -53,6 +56,7 @@
         }
 
         @include respond(large) {
+            padding-bottom: 4rem;
             grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
         }
 
@@ -91,13 +95,6 @@
             width: 20rem;
             height: 20rem;
         }
-
-        @include respond (largest) {
-            width: 20rem;
-            height: 20rem;
-        }
-
-
 
         &:hover>div {
             // transform: scale(1.3);
