@@ -7,7 +7,13 @@
     }
 
     @if $breakpoint==large {
-        @media only screen and (min-width: 48.75em) {
+        @media only screen and (min-width: 50em) {
+            @content
+        }
+    }
+
+    @if $breakpoint==largeest {
+        @media only screen and (min-width: 69.25em) {
             @content
         }
     }

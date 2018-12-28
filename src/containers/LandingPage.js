@@ -9,17 +9,15 @@ import Fade from "react-reveal/Fade";
 
 const LandingPage = () => (
   <div className="main-app">
-    <Section class="section section--hero">
-      <Birds />
-    </Section>
+    <Section class="section section--hero">{/* <Birds /> */}</Section>
     <Story>
-      <Fade duration={2000} delay={500}>
+      <Fade duration={3000} delay={800}>
         <Introduction />
       </Fade>
     </Story>
     <Section class="section section--about">
       <div className="rotation-correction">
-        <Fade down duration={3500}>
+        <Fade right duration={2000}>
           <ProjectView />
         </Fade>
       </div>

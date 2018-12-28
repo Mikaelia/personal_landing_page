@@ -1,16 +1,29 @@
 .introduction-container {
     position: absolute;
     top: 5rem;
-    left: 5rem;
     color: $color-white;
-    width: 35rem;
+    max-width: 35rem;
 
 
+    padding: 0 2rem;
     letter-spacing: .05rem;
     text-transform: none;
     line-height: 1.6;
     font-size: .9rem;
     font-weight: 100;
+
+    @include respond(smallest) {
+
+
+        max-width: 35rem;
+
+
+        letter-spacing: .05rem;
+        text-transform: none;
+        line-height: 1.6;
+        font-size: .9rem;
+        font-weight: 100;
+    }
 }
 
 .introduction-header {
@@ -18,4 +31,7 @@
     font-weight: 400;
     margin-bottom: 4rem;
     text-transform: uppercase;
+
+
+
 }
