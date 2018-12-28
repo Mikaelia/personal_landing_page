@@ -1,5 +1,7 @@
 .birds-container {
-    width: 100%;
+    width: 70%;
+    height: 2rem;
+
 }
 
 .bird {
@@ -83,11 +85,19 @@
     }
 
     60% {
-        transform: translateY(0vh) translateX(110vw) scale(0.6);
+        transform: translateY(0vh) translateX(100vw) scale(0.6);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    61% {
+        opacity: 0;
+        visibility: hidden;
     }
 
     100% {
-        transform: translateY(0vh) translateX(110vw) scale(0.6);
+        opacity: 0;
+        visibility: hidden;
     }
 
 }
