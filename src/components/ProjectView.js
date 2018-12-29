@@ -11,7 +11,7 @@ const ProjectView = () => {
           name="Color Collector"
           imageNumber="2"
           link="https://github.com/Mikaelia/color-collector"
-          summary="Create custom colors and organize them into palettes"
+          summary="Choose or input and name custom colors. Create and organize color palettes for your next design project"
           technology="ReactJS, Redux, Sass, custom notifications and UI"
         />
         <ProjectCard

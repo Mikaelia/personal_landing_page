@@ -682,6 +682,7 @@ App {
   height: 50%;
   width: 80%;
   font-weight: 300;
+  font-size: .8rem;
   text-transform: none;
   opacity: 0;
   visibility: hidden;
