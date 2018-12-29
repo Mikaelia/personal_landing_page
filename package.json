@@ -19,7 +19,7 @@
     "styled-components": "^4.1.1"
   },
   "scripts": {
-    "watch:sass": "node-sass src/sass/main.scss src/scss/style.css -w",
+    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
     "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/css/style.comp.css -o src/css/style.prefix.css",
     "compress:css": "node-sass src/css/style.prefix.css src/css/style.css --output-style compressed",

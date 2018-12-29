@@ -1,14 +1,27 @@
 import React from "react";
 
-const ProjectCard = ({ imageNumber, link, name, children }) => (
+const ProjectCard = ({
+  imageNumber,
+  link,
+  name,
+  summary,
+  technology,
+  children
+}) => (
   <div className="project__card">
-    <span className="project__card-name">{name}</span>
-    <a className="project__link" href={link}>
+    <div className="project__card-overlay">
+      <div className="project__card-details">
+        <h3 className="project__card-name">{name}</h3>
+        <p className="project__card-summary">{summary}</p>
+        <h5 style={{ textTransform: "uppercase" }}>Built With:</h5>
+        <p>{technology}</p>
+      </div>
+    </div>
+    <a className="project__card-link" href={link}>
       To Project &rarr;
     </a>
-    <div className={`project__card-image card-image--${imageNumber}`}>
-      {children}
-    </div>
+    {children}
+    <div className={`project__card-image card-image--${imageNumber}`} />
   </div>
 );
 
