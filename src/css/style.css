@@ -591,11 +591,11 @@ App {
   padding-top: 4rem; }
 
 .project__container {
-  border-radius: .2rem;
   height: 80rem;
   width: 95vw;
   margin-top: 0rem;
   padding-top: 5rem;
+  border-radius: .2rem;
   background: rgba(255, 255, 255, 0.152);
   color: white;
   display: flex;
@@ -611,12 +611,12 @@ App {
       height: 73rem; } }
 
 .project__header {
-  text-transform: uppercase;
-  margin: 10rem 0 1rem 0;
-  font-weight: 500;
-  text-align: center;
   height: 10%;
-  width: 100%; }
+  width: 100%;
+  margin: 10rem 0 1rem 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center; }
 
 .project__card-container {
   height: 75%;
@@ -624,14 +624,14 @@ App {
   padding-bottom: 4rem;
   margin-bottom: 4rem;
   padding-top: 2rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2rem;
   grid-row-gap: 4rem;
   align-items: center;
-  justify-items: center;
-  overflow-y: scroll;
-  overflow-x: hidden; }
+  justify-items: center; }
   @media only screen and (min-width: 31.25em) {
     .project__card-container {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }
@@ -640,15 +640,15 @@ App {
       grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); } }
 
 .project__card {
+  position: relative;
   width: 19rem;
   height: 19rem;
   margin-bottom: 0;
-  background: white;
   border-radius: .4rem;
   overflow: hidden;
-  position: relative;
-  transition: all .2s;
-  box-shadow: 2px 3px 15px rgba(32, 68, 122, 0.37); }
+  background: white;
+  box-shadow: 2px 3px 15px rgba(32, 68, 122, 0.37);
+  transition: all .2s; }
   @media only screen and (min-width: 31.25em) {
     .project__card {
       width: 25rem;
@@ -675,21 +675,21 @@ App {
     width: 100%;
     font-weight: 400;
     background: #74b7e4;
-    z-index: 10;
-    opacity: 1; }
+    opacity: 1;
+    z-index: 10; }
 
 .project__card-details {
   height: 50%;
   width: 80%;
+  margin-top: 4rem;
   font-weight: 300;
-  font-size: .8rem;
+  font-size: 12px;
   text-transform: none;
   opacity: 0;
   visibility: hidden;
   display: none;
   transition: opacity .4s ease-in;
   transition-delay: .5s;
-  margin-top: 4rem;
   color: rgba(41, 56, 83, 0.781);
   display: flex;
   flex-direction: column;
@@ -709,30 +709,30 @@ App {
   top: 0%;
   width: 100%;
   height: 100%;
+  text-align: center;
+  transition: all .4s ease-in;
   background-size: 400%;
   background-position: 100%;
   background-image: linear-gradient(150deg, #d3e6f8 0%, #d3e6f8 50%, transparent 50%);
-  z-index: 2;
-  text-align: center;
-  transition: all .4s ease-in;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  z-index: 2; }
 
 .project__card-link:link, .project__card-link:visited {
   position: absolute;
   bottom: 0;
   right: 0;
-  opacity: 0;
   width: 100%;
+  height: 0;
+  opacity: 0;
   color: white;
   font-weight: 400;
   text-decoration: none;
-  display: inline-block;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .5s;
+  transition: opacity .5s;
   transition-delay: 1s; }
 
 .project__card-image {
@@ -742,7 +742,7 @@ App {
   background: center;
   background-position-y: -.1rem;
   background-size: cover;
-  transition: all .2s;
+  transition: height .2s;
   z-index: 0; }
 
 .card-image--1 {
