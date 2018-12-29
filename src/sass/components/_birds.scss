@@ -39,12 +39,12 @@
     animation-iteration-count: infinite;
 
     &--one {
-        animation-duration: 18s;
+        animation-duration: 35s;
         animation-delay: 0;
     }
 
     &--two {
-        animation-duration: 19s;
+        animation-duration: 36s;
         animation-delay: 1s;
     }
 
@@ -66,6 +66,7 @@
     0% {
         transform: scale(0.3) translateX(-10vw);
         visibility: visible;
+        opacity: 1;
     }
 
     10% {
@@ -95,14 +96,14 @@
     }
 
     61% {
-        transform: translateY(0vh) translateX(100vw) scale(0.6);
-        // opacity: 0;
+        transform: translateY(0vh) translateX(101vw) scale(0.6);
+        opacity: 0;
         visibility: hidden;
     }
 
     100% {
-        transform: translateY(0vh) translateX(100vw) scale(0.6);
-        // opacity: 0;
+        transform: translateY(0vh) translateX(101vw) scale(0.6);
+        opacity: 0;
         visibility: hidden;
     }
 
