@@ -39,21 +39,21 @@ class Navigation extends Component {
                 href="https://github.com/Mikaelia"
                 className="navigation__link"
               >
-                <span>02</span>Projects
-              </a>
-            </li>
-            <li className="navigation__item">
-              <a
-                href="https://www.facebook.com/mikaelaspencils/"
-                className="navigation__link"
-              >
-                <span>03</span>Pencil Art
+                <span>02</span>Github
               </a>
             </li>
             <li className="navigation__item" onClick={this.handleCheck}>
               <Link to="/resume" className="navigation__link">
                 <span>04</span>Resume
               </Link>
+            </li>
+            <li className="navigation__item">
+              <a
+                href="https://www.facebook.com/mikaelaspencils/"
+                className="navigation__link"
+              >
+                <span>03</span>Artwork
+              </a>
             </li>
             <li className="navigation__item">
               <a
