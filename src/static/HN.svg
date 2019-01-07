@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="314px" height="314px" viewBox="0 0 314 314" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Shell</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-281.000000, -868.000000)">
+            <g id="Shell" transform="translate(281.000000, 868.000000)">
+                <path d="M4,0 L310,0 C312.209139,-4.05812251e-16 314,1.790861 314,4 L314,310 C314,312.209139 312.209139,314 310,314 L4,314 C1.790861,314 2.705415e-16,312.209139 0,310 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="Airbnb" fill="#FF6600"></path>
+                <text id="HN" font-family="ArialNarrow-Bold, Arial Narrow" font-size="50" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="127.410156" y="178">HN</tspan>
+                </text>
+                <rect id="Rectangle" stroke="#FDFCF9" stroke-width="4" x="107" y="112" width="99" height="91"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

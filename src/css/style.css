@@ -220,10 +220,10 @@ App {
   animation-timing-function: linear;
   animation-iteration-count: infinite; }
   .bird-container--one {
-    animation-duration: 35s;
+    animation-duration: 29s;
     animation-delay: 0; }
   .bird-container--two {
-    animation-duration: 36s;
+    animation-duration: 30s;
     animation-delay: 1s; }
 
 @keyframes fly-cycle {
@@ -309,7 +309,13 @@ App {
 
 .footer {
   position: relative;
-  background-color: black; }
+  background-color: black;
+  color: #f8ebdb; }
+  .footer p {
+    position: absolute;
+    top: 80%;
+    right: 2rem;
+    font-size: .5rem; }
 
 .navigation__checkbox {
   display: none; }
@@ -578,12 +584,19 @@ App {
       line-height: 1.6;
       font-size: .9rem;
       font-weight: 100; } }
+  @media only screen and (min-width: 69.25em) {
+    .introduction-container {
+      max-width: 40rem;
+      left: calc(50% - 20rem); } }
 
 .introduction-header {
   font-family: 'Montserrat';
   font-weight: 400;
   margin-bottom: 4rem;
   text-transform: uppercase; }
+  @media only screen and (min-width: 69.25em) {
+    .introduction-header {
+      text-align: center; } }
 
 .resume-view {
   height: 100vh;
@@ -624,8 +637,8 @@ App {
   padding-bottom: 4rem;
   margin-bottom: 4rem;
   padding-top: 2rem;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2rem;
@@ -674,7 +687,7 @@ App {
     height: 15%;
     width: 100%;
     font-weight: 400;
-    background: #74b7e4;
+    background: #a3d0ee;
     opacity: 1;
     z-index: 10; }
 
@@ -713,7 +726,7 @@ App {
   transition: all .4s ease-in;
   background-size: 400%;
   background-position: 100%;
-  background-image: linear-gradient(150deg, #d3e6f8 0%, #d3e6f8 50%, transparent 50%);
+  background-image: linear-gradient(150deg, white 0%, #d3e6f8 50%, transparent 50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -762,10 +775,7 @@ App {
   background-image: url("../static/trailfinder2.svg"); }
 
 .card-image--6 {
-  color: rgba(100, 195, 250, 0.993);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-image: url("../static/HN.svg"); }
 
 .tree {
   height: 5rem;
