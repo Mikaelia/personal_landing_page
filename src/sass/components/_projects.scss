@@ -59,6 +59,10 @@
 
         }
 
+        @include respond(largest) {
+            overflow: hidden;
+        }
+
     }
 
     &__card {

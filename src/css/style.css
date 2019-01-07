@@ -651,6 +651,9 @@ App {
   @media only screen and (min-width: 50em) {
     .project__card-container {
       grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); } }
+  @media only screen and (min-width: 69.25em) {
+    .project__card-container {
+      overflow: hidden; } }
 
 .project__card {
   position: relative;
