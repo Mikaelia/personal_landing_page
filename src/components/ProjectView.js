@@ -10,14 +10,14 @@ const ProjectView = () => {
         <ProjectCard
           name="Color Collector"
           imageNumber="2"
-          link="https://github.com/Mikaelia/color-collector"
+          link="https://github.com/Mikaelia/colorverse"
           summary="Choose or input and name custom colors. Create and organize color palettes for your next design project"
           technology="ReactJS, Redux, Sass, custom notifications and UI"
         />
         <ProjectCard
           name="TrailFinder V2"
           imageNumber="5"
-          link="https://github.com/Mikaelia/trailfinderv2"
+          link="https://github.com/Mikaelia/TrailFinder-V2"
           summary="*In Progress* Remake of TrailFinderV1. Features facebook and email authentication, based on user-selected parameters returns trails near geolocation or area selected on map"
           technology="Sass, JavaScript/ReactJS, GeolocationAPI, OpenTrailsAPI, GoogleMapsAPI, user authentication with Firebase, methods to return trail distance from current location"
         />
