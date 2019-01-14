@@ -260,53 +260,6 @@ App {
     opacity: 0;
     visibility: hidden; } }
 
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  width: 20rem;
-  height: 20rem;
-  position: relative;
-  overflow: hidden;
-  border-radius: .5rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  cursor: pointer; }
-  .card__image {
-    height: 110%;
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    z-index: -5; }
-  .card__image:before {
-    content: '';
-    color: red;
-    position: absolute;
-    z-index: -3; }
-  .card__text {
-    font-size: 3rem;
-    z-index: 800; }
-  .card:hover {
-    transform: scale(1.2, 1.2);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-    opacity: 1;
-    color: transparent; }
-  .card:active {
-    transform: translateY(10px); }
-  .card:hover > img {
-    opacity: 1;
-    transform: translateY(-2rem); }
-  .card:hover > h3 {
-    visibility: hidden; }
-
-.card-3 img {
-  padding: 5rem 5rem 4rem 4rem; }
-
-.card-1 {
-  z-index: 1000; }
-
 .footer {
   position: relative;
   background-color: black;
@@ -636,13 +589,12 @@ App {
   width: 94%;
   padding-bottom: 4rem;
   margin-bottom: 4rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 2rem;
-  grid-row-gap: 4rem;
+  grid-gap: 4rem 2rem;
   align-items: center;
   justify-items: center; }
   @media only screen and (min-width: 31.25em) {
@@ -662,15 +614,15 @@ App {
   margin-bottom: 0;
   border-radius: .4rem;
   overflow: hidden;
-  background: white;
+  background: transparent;
   box-shadow: 2px 3px 15px rgba(32, 68, 122, 0.37);
-  transition: all .2s; }
+  transition: all .2s ease-out; }
   @media only screen and (min-width: 31.25em) {
     .project__card {
       width: 25rem;
       height: 25rem; }
       .project__card:hover {
-        transform: scale(1.02) translateY(-1rem);
+        transform: scale(1.01) translateY(-1rem);
         box-shadow: 7px 15px 25px rgba(27, 50, 85, 0.384); } }
   @media only screen and (min-width: 50em) {
     .project__card {
@@ -687,26 +639,25 @@ App {
     opacity: 1;
     visibility: visible; }
   .project__card:hover .project__card-link {
+    opacity: 1;
     height: 15%;
     width: 100%;
     font-weight: 400;
     background: #a3d0ee;
-    opacity: 1;
     z-index: 10; }
 
 .project__card-details {
+  opacity: 0;
+  visibility: hidden;
   height: 50%;
   width: 80%;
   margin-top: 4rem;
   font-weight: 300;
   font-size: 12px;
   text-transform: none;
-  opacity: 0;
-  visibility: hidden;
-  display: none;
+  color: rgba(41, 56, 83, 0.781);
   transition: opacity .4s ease-in;
   transition-delay: .5s;
-  color: rgba(41, 56, 83, 0.781);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
