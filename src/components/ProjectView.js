@@ -39,9 +39,9 @@ const ProjectView = () => {
         <ProjectCard
           name="HackerNews Client"
           imageNumber="6"
-          link="https://github.com/Mikaelia/hackernews-manager"
-          summary="A React application that allows users to search and filter top HackerNews stories"
-          technology="ReactJS, HackerNewsAPI, Lodash for results sorting, developed caching functionality and paginated loading"
+          link="https://github.com/Mikaelia/hacker-news-client"
+          summary="A React application to filter and sort top HackerNews stories"
+          technology="ReactJS, HackerNewsAPI, Lodash for sorting. Developed caching functionality and paginated loading"
         />
         <ProjectCard
           name="C Shell"
