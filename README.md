@@ -1,14 +1,9 @@
 # Personal Website
 
-This is the landing page to my personal website mikaelagurney.com. The project is currently in-development,
-and may be viewed here:
+This is the landing page to my personal website https://www.mikaelagurney.com. The project is currently in-development
 
-> Link coming soon!
+## Tech
 
-Features:
-_In progress_
-[] - About Me
-[] - Art Gallery
-[] - Code Portfolio
+The application is built with React, and styled with CSS/Sass.
 
 Thanks!
