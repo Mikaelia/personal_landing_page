@@ -68,7 +68,7 @@ class Navigation extends Component {
                 href="https://twitter.com/MikaelaGurney"
                 className="navigation__link"
               >
-                <span>05</span>Social
+                <span>06</span>Social
               </a>
             </li>
           </ul>
