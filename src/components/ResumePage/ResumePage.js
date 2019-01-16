@@ -10,7 +10,7 @@ const ResumePage = () => {
       <PDFViewer
         ref={_myViewer}
         backend={PDFJSBackend}
-        src="/mikaela_gurney-resume-2018.pdf"
+        src="/mikaela_gurney-resume-2019-2.pdf"
       />
     </div>
   );
