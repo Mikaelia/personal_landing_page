@@ -13,7 +13,7 @@ const ProjectCard = ({
       <div className="project__card-details">
         <h3 className="project__card-name">{name}</h3>
         <p className="project__card-summary">{summary}</p>
-        <h5 style={{ textTransform: "uppercase" }}>Built With:</h5>
+        <h5 className="project__card-tools">Built With:</h5>
         <p>{technology}</p>
       </div>
     </div>

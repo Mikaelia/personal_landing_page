@@ -38,3 +38,14 @@
 
     }
 }
+
+.art-link,
+.art-link:active,
+.art-link:visited {
+
+    color: $color-white;
+
+    &:hover {
+        color: $color-secondary-light;
+    }
+}

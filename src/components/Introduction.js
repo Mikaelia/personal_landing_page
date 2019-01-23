@@ -13,8 +13,15 @@ const Introduction = () => (
     </p>
     <br />
     <p>
-      As an artist, I'm addicted to detail. My mission is to create virtual
-      experiences that'll brighten your day.
+      As an{" "}
+      <a
+        className="art-link"
+        href="https://www.facebook.com/mikaelaspencils/photos/a.1153897121335193/1153897111335194/?type=1&theater"
+      >
+        artist
+      </a>
+      , I'm addicted to detail. My mission is to create virtual experiences
+      that'll brighten your day.
     </p>
     <br />
     <p>

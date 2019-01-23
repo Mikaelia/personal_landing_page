@@ -551,6 +551,15 @@ App {
     .introduction-header {
       text-align: center; } }
 
+.art-link,
+.art-link:active,
+.art-link:visited {
+  color: #f8ebdb; }
+  .art-link:hover,
+  .art-link:active:hover,
+  .art-link:visited:hover {
+    color: #ffbb00cc; }
+
 .resume-view {
   height: 100vh;
   width: 100%;
@@ -643,7 +652,7 @@ App {
     height: 15%;
     width: 100%;
     font-weight: 400;
-    background: #a3d0ee;
+    background: #ffbb00cc;
     z-index: 10; }
 
 .project__card-details {
@@ -655,7 +664,8 @@ App {
   font-weight: 300;
   font-size: 12px;
   text-transform: none;
-  color: rgba(41, 56, 83, 0.781);
+  line-height: 1rem;
+  color: #ffffff;
   transition: opacity .4s ease-in;
   transition-delay: .5s;
   display: flex;
@@ -663,10 +673,16 @@ App {
   justify-content: space-around;
   z-index: 3; }
 
+.project__card-tools {
+  text-transform: uppercase;
+  color: #a3d0ee;
+  font-weight: 500; }
+
 .project__card-name {
   text-transform: uppercase;
   font-weight: 500;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  color: #a3d0ee; }
 
 .project__card-summary {
   margin-bottom: 2rem; }
@@ -680,7 +696,7 @@ App {
   transition: all .4s ease-in;
   background-size: 400%;
   background-position: 100%;
-  background-image: linear-gradient(150deg, white 0%, #d3e6f8 50%, transparent 50%);
+  background-image: linear-gradient(150deg, #262c36 50%, transparent 50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -701,6 +717,8 @@ App {
   justify-content: center;
   transition: opacity .5s;
   transition-delay: 1s; }
+  .project__card-link:link:hover, .project__card-link:visited:hover {
+    background: #a3d0ee; }
 
 .project__card-image {
   width: 100%;

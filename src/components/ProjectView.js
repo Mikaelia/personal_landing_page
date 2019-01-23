@@ -19,7 +19,7 @@ const ProjectView = () => {
           imageNumber="5"
           link="https://github.com/Mikaelia/TrailFinder-V2"
           summary="*In Progress* Remake of TrailFinderV1. Features facebook and email authentication, based on user-selected parameters returns trails near geolocation or area selected on map"
-          technology="Sass, JavaScript/ReactJS, GeolocationAPI, OpenTrailsAPI, GoogleMapsAPI, user authentication with Firebase, methods to return trail distance from current location"
+          technology="Sass, JavaScript/ReactJS, GeolocationAPI, OpenTrailsAPI, GoogleMapsAPI, Firebase Oauth, methods to find trail distance from current location"
         />
         <ProjectCard
           name="AirBnB Clone"
