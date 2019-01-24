@@ -8,8 +8,8 @@ const Introduction = () => (
     <p>I'm a Front-End engineer who loves everything HTML, CSS, JavaScript.</p>
     <br />
     <p>
-      With a background in International Relations and Global Studies, I'm
-      driven to understand people, and perspectives that challenge my own.
+      With a degree in International Relations and Global Studies, I'm driven to
+      understand people, and perspectives that challenge my own.
     </p>
     <br />
     <p>
