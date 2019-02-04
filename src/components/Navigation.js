@@ -44,7 +44,7 @@ class Navigation extends Component {
             </li>
             <li className="navigation__item" onClick={this.handleCheck}>
               <Link to="/resume" className="navigation__link">
-                <span>04</span>Resume
+                <span>03</span>Resume
               </Link>
             </li>
             <li className="navigation__item">
@@ -52,7 +52,7 @@ class Navigation extends Component {
                 href="https://www.facebook.com/mikaelaspencils/"
                 className="navigation__link"
               >
-                <span>03</span>Artwork
+                <span>04</span>Artwork
               </a>
             </li>
             <li className="navigation__item">
