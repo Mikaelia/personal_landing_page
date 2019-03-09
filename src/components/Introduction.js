@@ -25,7 +25,7 @@ const Introduction = () => (
     </p>
     <br />
     <p>
-      I'm constantly seeking to improve as I learn to tackle and scaleable and
+      I'm constantly seeking to improve as I learn to tackle scaleable and
       reusable design.
     </p>
     <br />
