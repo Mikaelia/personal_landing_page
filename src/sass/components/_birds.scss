@@ -5,7 +5,7 @@
 }
 
 .bird {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+    background-image: url('../bird-cells.svg');
     background-size: auto 100%;
     width: 88px;
     height: 125px;
@@ -22,7 +22,13 @@
 
     &--two {
         animation-duration: 0.9s;
-        animation-delay: -0.75s;
+        animation-delay: -1s;
+    }
+
+    &--three {
+        animation-duration: .8s;
+        animation-delay: -1s;
+
     }
 
 }
@@ -45,7 +51,12 @@
 
     &--two {
         animation-duration: 30s;
-        animation-delay: 1s;
+        animation-delay: 3s;
+    }
+
+    &--three {
+        animation-duration: 35s;
+        animation-delay: 10s;
     }
 
 }

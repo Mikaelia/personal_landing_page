@@ -128,9 +128,6 @@ App {
   align-items: center;
   justify-content: space-between;
   z-index: 100; }
-  @media only screen and (min-width: 31.25em) {
-    .header {
-      font-size: 2rem; } }
   .header--scrolled {
     padding: 15px 0;
     height: 4rem;
@@ -734,7 +731,7 @@ App {
   background-image: url("../static/TrailFinder1.svg"); }
 
 .card-image--2 {
-  background-image: url("../static/colorette.svg"); }
+  background-image: url("../static/colorverse.svg"); }
 
 .card-image--3 {
   background-image: url("../static/shell.svg"); }

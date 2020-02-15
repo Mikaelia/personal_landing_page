@@ -128,9 +128,6 @@ App {
   align-items: center;
   justify-content: space-between;
   z-index: 100; }
-  @media only screen and (min-width: 31.25em) {
-    .header {
-      font-size: 2rem; } }
   .header--scrolled {
     padding: 15px 0;
     height: 4rem;
@@ -139,8 +136,10 @@ App {
     color: #ffbb00cc; }
 
 .header__logo {
+  margin: 0;
   margin-left: 2rem;
-  padding: .5rem 0; }
+  padding: .5rem 0;
+  font-weight: 300; }
 
 .tree {
   background-image: url("../static/tree.svg");
@@ -195,7 +194,7 @@ App {
   height: 2rem; }
 
 .bird {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+  background-image: url("../bird-cells.svg");
   background-size: auto 100%;
   width: 88px;
   height: 125px;
@@ -208,7 +207,10 @@ App {
     animation-delay: -0.5s; }
   .bird--two {
     animation-duration: 0.9s;
-    animation-delay: -0.75s; }
+    animation-delay: -1s; }
+  .bird--three {
+    animation-duration: .8s;
+    animation-delay: -1s; }
 
 .bird-container {
   position: absolute;
@@ -224,7 +226,10 @@ App {
     animation-delay: 0; }
   .bird-container--two {
     animation-duration: 30s;
-    animation-delay: 1s; }
+    animation-delay: 3s; }
+  .bird-container--three {
+    animation-duration: 35s;
+    animation-delay: 10s; }
 
 @keyframes fly-cycle {
   100% {

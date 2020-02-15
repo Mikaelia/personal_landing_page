@@ -29,7 +29,7 @@ class Header extends Component {
           this.state.hasScrolled ? "header header--scrolled" : "header"
         }
       >
-        <p className="header__logo">Mikaela Gurney</p>
+        <span className="header__logo">Mikaela Gurney</span>
         <Navigation
           modifier={this.state.hasScrolled ? " navigation__icon--scrolled" : ""}
         />
