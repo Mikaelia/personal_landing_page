@@ -392,7 +392,7 @@ App {
   background-color: #080808;
   z-index: 30;
   position: relative;
-  height: 50vh; }
+  height: 35rem; }
 
 .about__viewport {
   background-color: rgba(0, 0, 0, 0.685);
