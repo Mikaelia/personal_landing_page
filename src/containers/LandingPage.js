@@ -13,17 +13,17 @@ const LandingPage = () => (
       <Birds />
     </Section>
     <Story>
-      <Fade left duration={2000} delay={300}>
+      <Fade duration={2000} delay={300}>
         <Introduction />
       </Fade>
     </Story>
-    <Section class="section section--about">
+    {/* <Section class="section section--about">
       <div className="rotation-correction">
-        <Fade right duration={2000}>
+        <Fade duration={2000}>
           <ProjectView />
-        </Fade>
+        </Fade>Ddis
       </div>
-    </Section>
+    </Section> */}
     <Footer />
   </div>
 );

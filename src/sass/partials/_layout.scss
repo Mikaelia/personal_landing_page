@@ -5,7 +5,7 @@
 
     //// MAIN GRID ////
     display: grid;
-    grid-template-rows: 4rem 95vh 80rem 60rem 10rem;
+    grid-template-rows: 4rem 95vh 1fr 1fr;
     grid-template-columns: repeat(8, 1fr);
 
 }
@@ -25,7 +25,7 @@
 }
 
 .story {
-    grid-row: 3 / 4;
+    grid-row: 3;
     grid-column: 1 / 9;
 }
 
@@ -34,33 +34,14 @@
     grid-row: 4 / 5;
     position: relative;
 
-
-
-    margin-top: -45rem;
-    // Reverse background image
     transform: rotate(180deg);
     background-image: url('../static/bg--secondary.svg');
     background-size: contain;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -50;
-
-    .rotation-correction {
-        //Correct scroll reverse
-        transform: rotate(180deg);
-        margin-top: -20rem;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
 
 }
 
 .footer {
-    grid-row: 5 / 6;
+    grid-row: 4;
     grid-column: 1 / 9;
 }

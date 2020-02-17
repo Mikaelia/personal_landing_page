@@ -5,7 +5,9 @@ const Story = ({ children }) => (
   <div className="story">
     <Wave />
     <div className="story__content">{children}</div>
+
   </div>
+
 );
 
 export default Story;
