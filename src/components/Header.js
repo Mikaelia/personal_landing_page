@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Navigation from "./Navigation";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      hasScrolled: false
+      hasScrolled: false,
     };
   }
 
@@ -13,7 +14,7 @@ class Header extends Component {
     window.addEventListener("scroll", this.handleScroll);
   }
 
-  handleScroll = event => {
+  handleScroll = (event) => {
     const scrollTop = window.pageYOffset;
     if (scrollTop > 50) {
       this.setState({ hasScrolled: true });
@@ -29,7 +30,9 @@ class Header extends Component {
           this.state.hasScrolled ? "header header--scrolled" : "header"
         }
       >
-        <span className="header__logo">Mikaela Gurney</span>
+        <Link to="/">
+          <span className="header__logo">Mikaela Gurney</span>
+        </Link>
         <Navigation
           modifier={this.state.hasScrolled ? " navigation__icon--scrolled" : ""}
         />

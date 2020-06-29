@@ -117,17 +117,22 @@ App {
   align-items: center;
   justify-content: space-between;
   z-index: 100; }
+  .header a {
+    text-decoration: none;
+    color: black; }
   .header--scrolled {
     padding: 15px 0;
     height: 4rem;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
     color: #ffbb00cc; }
+    .header--scrolled a {
+      color: #ffbb00cc; }
 
 .header__logo {
   margin: 0;
   margin-left: 2rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-weight: 300; }
 
 .tree {
@@ -192,14 +197,10 @@ App {
   animation-timing-function: steps(10);
   animation-iteration-count: infinite; }
   .bird--one {
-    animation-duration: 1s;
-    animation-delay: -0.5s; }
+    animation-duration: 1s; }
   .bird--two {
     animation-duration: 0.9s;
-    animation-delay: -1s; }
-  .bird--three {
-    animation-duration: .8s;
-    animation-delay: -.75s; }
+    animation-delay: -2s; }
 
 .bird-container {
   position: absolute;
@@ -228,7 +229,7 @@ App {
 
 @keyframes fly-right-one {
   0% {
-    transform: scale(0.3) translateX(-10vw);
+    transform: scale(0.3) translateX(0vw);
     visibility: visible;
     opacity: 1; }
   10% {
@@ -242,7 +243,7 @@ App {
   50% {
     transform: translateY(0vh) translateX(90vw) scale(0.6); }
   60% {
-    transform: translateY(0vh) translateX(100vw) scale(0.6);
+    transform: translateY(-2vh) translateX(100vw) scale(0.6);
     opacity: 1;
     visibility: visible; }
   61% {
@@ -256,14 +257,14 @@ App {
 
 .footer {
   position: relative;
-  background-color: black;
+  background-color: #080808;
   color: #f8ebdb;
   height: 5rem; }
   .footer p {
     position: absolute;
     top: 80%;
     right: 2rem;
-    font-size: .5rem; }
+    font-size: 0.5rem; }
 
 .navigation__checkbox {
   display: none; }
@@ -281,7 +282,7 @@ App {
   width: 4rem;
   border-radius: 50%;
   position: fixed;
-  top: .5rem;
+  top: 0.5rem;
   right: 2rem;
   background-image: radial-gradient(#0b0413, rgba(0, 0, 0, 0.5));
   opacity: 0;
@@ -297,7 +298,7 @@ App {
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  animation: slide-down .1s; }
+  animation: slide-down 0.1s; }
 
 .navigation__list {
   position: absolute;
@@ -319,8 +320,8 @@ App {
   text-decoration: none;
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #f8ebdb 50%);
-  background-size: 220%;
-  transition: all .4s; }
+  background-size: 224%;
+  transition: all 0.4s; }
   @media only screen and (min-width: 31.25em) {
     .navigation__link:link, .navigation__link:visited {
       font-size: 3rem; } }
@@ -335,7 +336,7 @@ App {
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(100);
-  opacity: .8; }
+  opacity: 0.8; }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
@@ -356,16 +357,16 @@ App {
     height: 2px;
     background-color: #4d1553;
     display: inline-block;
-    transition: all .3s; }
+    transition: all 0.3s; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
     left: 0;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .navigation__icon::before {
-    top: -.6rem; }
+    top: -0.6rem; }
   .navigation__icon::after {
-    top: .6rem; }
+    top: 0.6rem; }
   .navigation__icon--scrolled, .navigation__icon--scrolled::before, .navigation__icon--scrolled::after {
     background-color: #f8ebdb; }
 

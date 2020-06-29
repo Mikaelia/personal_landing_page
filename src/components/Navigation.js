@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 class Navigation extends Component {
   state = {
-    checked: false
+    checked: false,
   };
   handleCheck = () => {
     this.setState({ checked: !this.state.checked });
@@ -29,30 +29,30 @@ class Navigation extends Component {
 
         <nav className="navigation__nav">
           <ul className="navigation__list">
-            <li className="navigation__item" onClick={this.handleCheck}>
-              <Link to="/" className="navigation__link">
-                <span>01</span>Home
-              </Link>
-            </li>
             <li className="navigation__item">
               <a
                 href="https://github.com/Mikaelia"
                 className="navigation__link"
               >
-                <span>02</span>Github
+                Github
               </a>
             </li>
             <li className="navigation__item" onClick={this.handleCheck}>
               <Link to="/resume" className="navigation__link">
-                <span>03</span>Resume
+                Resume
               </Link>
+            </li>
+            <li className="navigation__item" onClick={this.handleCheck}>
+              <a href="https://www.pixelsips.dev/" className="navigation__link">
+                Blog
+              </a>
             </li>
             <li className="navigation__item">
               <a
                 href="https://www.facebook.com/mikaelaspencils/"
                 className="navigation__link"
               >
-                <span>04</span>Artwork
+                Artwork
               </a>
             </li>
             <li className="navigation__item">
@@ -60,15 +60,7 @@ class Navigation extends Component {
                 href="https://www.linkedin.com/in/mikaela-gurney-947926b9/"
                 className="navigation__link"
               >
-                <span>05</span>LinkedIn
-              </a>
-            </li>
-            <li className="navigation__item">
-              <a
-                href="https://twitter.com/MikaelaGurney"
-                className="navigation__link"
-              >
-                <span>06</span>Social
+                LinkedIn
               </a>
             </li>
           </ul>
