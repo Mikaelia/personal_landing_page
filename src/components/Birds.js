@@ -11,9 +11,9 @@ export default function Birds() {
         <div className="bird bird--two" />
       </div>
 
-      <div className="bird-container bird-container--three">
+      {/* <div className="bird-container bird-container--three">
         <div className="bird bird--three" />
-      </div>
+      </div> */}
     </div>
   );
 }

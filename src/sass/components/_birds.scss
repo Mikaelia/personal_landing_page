@@ -1,121 +1,106 @@
 .birds-container {
-    width: 70%;
-    height: 2rem;
-
+  width: 70%;
+  height: 2rem;
 }
 
 .bird {
-    background-image: url('../bird-cells.svg');
-    background-size: auto 100%;
-    width: 88px;
-    height: 125px;
-    will-change: background-position;
+  background-image: url("../bird-cells.svg");
+  background-size: auto 100%;
+  width: 88px;
+  height: 125px;
+  will-change: background-position;
 
-    animation-name: fly-cycle;
-    animation-timing-function: steps(10);
-    animation-iteration-count: infinite;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(10);
+  animation-iteration-count: infinite;
 
-    &--one {
-        animation-duration: 1s;
-        animation-delay: -0.5s;
-    }
+  &--one {
+    animation-duration: 1s;
+  }
 
-    &--two {
-        animation-duration: 0.9s;
-        animation-delay: -1s;
-    }
-
-    &--three {
-        animation-duration: .8s;
-        animation-delay: -.75s;
-
-    }
-
+  &--two {
+    animation-duration: 0.9s;
+    animation-delay: -2s;
+  }
 }
 
 .bird-container {
-    position: absolute;
-    top: 20%;
-    left: -10%;
-    transform: scale(0) translateX(-10vw);
-    will-change: transform;
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  transform: scale(0) translateX(-10vw);
+  will-change: transform;
 
-    animation-name: fly-right-one;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  animation-name: fly-right-one;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
-    &--one {
-        animation-duration: 29s;
-        animation-delay: 0;
-    }
+  &--one {
+    animation-duration: 29s;
+    animation-delay: 0;
+  }
 
-    &--two {
-        animation-duration: 30s;
-        animation-delay: 3s;
-    }
+  &--two {
+    animation-duration: 30s;
+    animation-delay: 3s;
+  }
 
-    &--three {
-        animation-duration: 35s;
-        animation-delay: 11s;
-    }
-
+  &--three {
+    animation-duration: 35s;
+    animation-delay: 11s;
+  }
 }
 
-
 @keyframes fly-cycle {
-
-    100% {
-        background-position: -900px 0;
-        background-position-x: -900px;
-        background-position-y: 0;
-    }
-
+  100% {
+    background-position: -900px 0;
+    background-position-x: -900px;
+    background-position-y: 0;
+  }
 }
 
 @keyframes fly-right-one {
+  0% {
+    transform: scale(0.3) translateX(0vw);
+    visibility: visible;
+    opacity: 1;
+  }
 
-    0% {
-        transform: scale(0.3) translateX(-10vw);
-        visibility: visible;
-        opacity: 1;
-    }
+  10% {
+    transform: translateY(2vh) translateX(10vw) scale(0.4);
+  }
 
-    10% {
-        transform: translateY(2vh) translateX(10vw) scale(0.4);
-    }
+  20% {
+    transform: translateY(0vh) translateX(30vw) scale(0.5);
+  }
 
-    20% {
-        transform: translateY(0vh) translateX(30vw) scale(0.5);
-    }
+  30% {
+    transform: translateY(4vh) translateX(50vw) scale(0.6);
+  }
 
-    30% {
-        transform: translateY(4vh) translateX(50vw) scale(0.6);
-    }
+  40% {
+    transform: translateY(2vh) translateX(70vw) scale(0.6);
+  }
 
-    40% {
-        transform: translateY(2vh) translateX(70vw) scale(0.6);
-    }
+  50% {
+    transform: translateY(0vh) translateX(90vw) scale(0.6);
+  }
 
-    50% {
-        transform: translateY(0vh) translateX(90vw) scale(0.6);
-    }
+  60% {
+    transform: translateY(-2vh) translateX(100vw) scale(0.6);
+    opacity: 1;
+    visibility: visible;
+  }
 
-    60% {
-        transform: translateY(0vh) translateX(100vw) scale(0.6);
-        opacity: 1;
-        visibility: visible;
-    }
+  61% {
+    transform: translateY(0vh) translateX(101vw) scale(0.6);
+    opacity: 0;
+    visibility: hidden;
+  }
 
-    61% {
-        transform: translateY(0vh) translateX(101vw) scale(0.6);
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    100% {
-        transform: translateY(0vh) translateX(101vw) scale(0.6);
-        opacity: 0;
-        visibility: hidden;
-    }
-
+  100% {
+    transform: translateY(0vh) translateX(101vw) scale(0.6);
+    opacity: 0;
+    visibility: hidden;
+  }
 }
