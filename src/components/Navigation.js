@@ -5,6 +5,15 @@ class Navigation extends Component {
   state = {
     checked: false,
   };
+
+  componentDidMount() {
+    document.addEventListener("keydown", this.closeModal);
+  }
+
+  closeModal = (event) => {
+    if (event.keyCode === 27) this.setState({ checked: false });
+  };
+
   handleCheck = () => {
     this.setState({ checked: !this.state.checked });
   };

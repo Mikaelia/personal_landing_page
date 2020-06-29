@@ -270,9 +270,10 @@ App {
   display: none; }
 
 .navigation__button {
-  position: fixed;
+  position: absolute;
+  padding: 0 3rem;
   top: 0rem;
-  right: 3rem;
+  right: 1rem;
   z-index: 2000;
   text-align: center;
   cursor: pointer; }
