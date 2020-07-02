@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navigation from "./Navigation";
 import { Link } from "react-router-dom";
+import throttle from "lodash.throttle";
 
 class Header extends Component {
   constructor(props) {
@@ -10,12 +11,17 @@ class Header extends Component {
     };
   }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
+  // componentDidMount() {
+  //   window.addEventListener("scroll", this.handleScroll);
+  // }
+
+  // componentWillUnmount() {
+  //   window.removeEventListener("scroll", this.handleScroll);
+  // }
 
   handleScroll = (event) => {
     const scrollTop = window.pageYOffset;
+    console.log(scrollTop);
     if (scrollTop > 50) {
       this.setState({ hasScrolled: true });
     } else {
