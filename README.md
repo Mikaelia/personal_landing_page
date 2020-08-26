@@ -1,6 +1,6 @@
 # Personal Website
 
-This is the landing page to my personal website https://www.mikaelagurney.com. The project is currently in-development
+My personal website. I have replicated this website with a version built with Gatsby.js available at: https://www.mikaelagurney.com. 
 
 ## Tech
 
